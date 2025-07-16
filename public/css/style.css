@@ -1,0 +1,115 @@
+/* Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.custom-navbar {
+  display: flex;
+  align-items: center;
+  background: #212529;
+  color: white;
+  padding: 10px 20px;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+/* Tombol Toggle */
+.toggle-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Sidebar */
+.custom-sidebar {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 60px;
+  background-color: #212529;
+  transition: all 0.3s ease-in-out;
+  overflow-x: hidden;
+  padding-top: 10px;
+}
+
+/* Saat sidebar tertutup */
+.custom-sidebar.collapsed {
+  width: 0;
+  left: -250px;
+  overflow: hidden;
+}
+
+/* Menu Sidebar */
+.custom-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.custom-sidebar ul li {
+  padding: 10px 20px;
+}
+
+.custom-sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Kontainer Konten */
+.content-wrapper {
+  margin-left: 250px;
+  padding: 80px 20px 20px;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+/* Jika sidebar ditutup, konten melebar */
+.custom-sidebar.collapsed ~ .content-wrapper {
+  margin-left: 0;
+}
+
+/* Saat sidebar terbuka */
+.content-wrapper {
+  margin-left: 250px; /* Sesuaikan dengan lebar sidebar */
+  transition: margin-left 0.3s ease-in-out;
+}
+
+/* Jika sidebar tertutup, dashboard melebar */
+.custom-sidebar.collapsed ~ .content-wrapper {
+  margin-left: 0;
+}
+
+/* Konten utama */
+.main-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Jika sidebar tertutup */
+.main-content.full-width {
+  margin-left: 0;
+}
+
+.card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border-radius: 12px;
+}
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+.card-body i {
+  opacity: 0.9;
+}
+
