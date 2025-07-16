@@ -31,6 +31,12 @@
             <a href="<?= BASEURL; ?>/distribusi">Distribusi</a>
         </li>
         <li class="nav-item">
+            <a href="">Toko</a>
+        </li>
+        <li class="nav-item">
+            <a href="<?= BASEURL; ?>/laporan">Laporan</a>
+        </li>
+        <li class="nav-item">
             <a href="<?= BASEURL; ?>/about">About Me</a>
         </li>
     </ul>
