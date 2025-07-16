@@ -14,17 +14,17 @@
                     <table class="table table-striped table-bordered">
                         <thead class="table-dark">
                             <tr>
-                                <th>NO</th>
-                                <th>NAMA MOTOR</th>
-                                <th>JUMLAH</th>
-                                <th>TUJUAN</th>
-                                <th>TANGGAL KIRIM</th>
-                                <th>STATUS</th>
-                                <th>Aksi</th>
+                                <th>No</th>
+                                <th>Nama Motor</th>
+                                <th>Jumlah</th>
+                                <th>Harga</th>
+                                <th>Dealer</th>
+                                <th>Tanggal Kirim</th>
+                                <th>Keterangan</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <?php $no = 1; ?>
+                            <!-- <?php $no = 1; ?>
                             <?php foreach ($data['distribusi'] as $d) : ?>
                                 <tr>
                                     <td><?= $no++; ?></td>
@@ -40,7 +40,7 @@
                                         </div>
                                     </td>
                                 </tr>
-                            <?php endforeach; ?>
+                            <?php endforeach; ?> -->
                         </tbody>
                     </table>
                 </div>
@@ -80,24 +80,17 @@
             </div>
 
             <div class="mb-3">
-                <label for="tujuan" class="form-label">Tujuan</label>
-                <input type="text" class="form-control" id="tujuan" name="tujuan" required>
+                <label for="dealer" class="form-label">Dealer</label>
+                <select name="dealer" id="dealer" class="form-control" required>
+                    <option value="">-- Dealer --</option>
+                    <option value="J">Jaya Mandiri</option>
+                    <option value="H">Honda</option>
+                </select>
             </div>
 
             <div class="mb-3">
                 <label for="tanggal_kirim" class="form-label">Tanggal Kirim</label>
                 <input type="date" class="form-control" id="tanggal_kirim" name="tanggal_kirim" required>
-            </div>
-
-            <div class="mb-3">
-                <label for="status" class="form-label">Status</label>
-                <select class="form-control" id="status" name="status" required>
-                    <option value="">-- Pilih Status --</option>
-                    <option value="Dikirim">Dikirim</option>
-                    <option value="Dalam Perjalanan">Dalam Perjalanan</option>
-                    <option value="Terkirim">Terkirim</option>
-                    <option value="Dibatalkan">Dibatalkan</option>
-                </select>
             </div>
       </div>
       <div class="modal-footer">
