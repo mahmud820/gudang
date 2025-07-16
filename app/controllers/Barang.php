@@ -7,7 +7,7 @@ class Barang extends Controller {
         $data['suppliers'] = $this->model('Supplier_model')->getAllSuppliers();
 
         $this->view('templates/header', $data);
-        $this->view('barang/index', $data);
+        // $this->view('barang/index', $data);
         $this->view('templates/footer');
     }
 

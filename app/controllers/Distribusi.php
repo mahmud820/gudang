@@ -8,7 +8,7 @@ class Distribusi extends Controller {
         $data['barang'] = $this->model('Barang_model')->getAllBarang(); // Ambil daftar barang
 
         $this->view('templates/header', $data);
-        $this->view('distribusi/index', $data);
+        // $this->view('distribusi/index', $data);
         $this->view('templates/footer');
     }
 

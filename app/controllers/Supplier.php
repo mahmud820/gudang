@@ -10,7 +10,7 @@ class Supplier extends Controller {
 
         // Memanggil view
         $this->view('templates/header', $data);
-        $this->view('supplier/index', $data);
+        // $this->view('supplier/index', $data);
         $this->view('templates/footer');
     }
 }
