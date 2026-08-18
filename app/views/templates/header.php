@@ -30,11 +30,14 @@
     <!-- Konten Utama -->
     <div class="flex-grow-1">
         <!-- Navbar -->
-        <nav class="custom-navbar d-flex align-items-center justify-content-between px-3" id="navbar">
-            <button class="toggle-btn btn btn-outline-light btn-sm" id="toggleSidebar">☰</button>
-            <span class="text-white">Gudang</span>
+        <nav class="custom-navbar d-flex align-items-center px-3" id="navbar">
+            <div class="d-flex align-items-center">
+                <button class="toggle-btn btn btn-outline-light btn-sm me-2" id="toggleSidebar">☰</button>
+                <h4 class="navbar-title m-0 text-white">Gudang</h4>
+            </div>
         </nav>
+
     </div>
 
     <!-- Konten -->
-        <div class="content-wrapper p-4">
+    <div class="content-wrapper p-4">
