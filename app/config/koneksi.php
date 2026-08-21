@@ -1,7 +1,7 @@
 <?php
 
 // Menentukan URL dasar aplikasi agar lebih mudah digunakan di seluruh sistem
-define('BASEURL', 'http://localhost/gudang/public');
+define('BASEURL', 'http://gudang.local/');
 
 // Konfigurasi database untuk koneksi MySQLi
 define('DB_HOST', 'localhost'); // Alamat server database (localhost berarti server lokal)

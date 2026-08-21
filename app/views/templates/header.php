@@ -11,33 +11,46 @@
 
 <body>
 
-    <!-- Wrapper -->
-    <div class="d-flex">
-        <!-- Sidebar -->
-        <nav class="custom-sidebar" id="sidebar">
-            <ul class="menu">
-                <li class="nav-item"><a href="<?= BASEURL; ?>/dashboard">Dashboard</a></li>
-                <li class="nav-item"><a href="<?= BASEURL; ?>/barang">Barang</a></li>
-                <li class="nav-item"><a href="<?= BASEURL; ?>/supplier">Supplier</a></li>
-                <li class="nav-item"><a href="<?= BASEURL; ?>/distribusi">Distribusi</a></li>
-                <li class="nav-item"><a href="#">Toko</a></li>
-                <li class="nav-item"><a href="<?= BASEURL; ?>/laporan">Laporan</a></li>
-                <li class="nav-item"><a href="<?= BASEURL; ?>/about">About Me</a></li>
-            </ul>
-        </nav>
-    </div>
+    <!-- Navbar -->
+    <nav class="custom-navbar px-4 py-2">
 
-    <!-- Konten Utama -->
-    <div class="flex-grow-1">
-        <!-- Navbar -->
-        <nav class="custom-navbar d-flex align-items-center px-3" id="navbar">
-            <div class="d-flex align-items-center">
-                <button class="toggle-btn btn btn-outline-light btn-sm me-2" id="toggleSidebar">☰</button>
-                <h4 class="navbar-title m-0 text-white">Gudang</h4>
+        <div class="left-section">
+            <button class="toggle-btn" id="toggleSidebar">
+                ☰
+            </button>
+
+            <div class="brand">
+                <img src="<?= BASEURL; ?>/img/logo.png" alt="Logo">
+                <div>
+                    <h5>MotoStock</h5>
+                    <small>Warehouse Management</small>
+                </div>
             </div>
-        </nav>
+        </div>
 
-    </div>
+        <div class="center-section">
 
-    <!-- Konten -->
-    <div class="content-wrapper p-4">
+            <div class="search-box">
+                <input type="text" placeholder="Cari barang...">
+            </div>
+
+        </div>
+
+        <div class="right-section">
+
+            <button class="icon-btn">
+                🔔
+            </button>
+
+            <div class="date">
+                <?= date('d M Y'); ?>
+            </div>
+
+            <div class="profile">
+                <img src="<?= BASEURL; ?>/img/user.png">
+                <span>Admin</span>
+            </div>
+
+        </div>
+
+    </nav>

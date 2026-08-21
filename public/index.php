@@ -1,5 +1,4 @@
 <?php
-
 // Cek apakah sesi sudah dimulai, jika belum maka mulai sesi baru
 if (!session_id()) session_start();
 
